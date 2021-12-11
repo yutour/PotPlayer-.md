@@ -1,1 +1,5 @@
-# 🚀 CodeSnips
+---
+title: "CodeSnips"
+---
+
+# 🚀 CodeSnips 🚀
