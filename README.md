@@ -1,5 +1,5 @@
-# 🚀 Markdown Notes
+# 🚀 Markdown Notes 🚀
 
-## ✈️ [CodeSnips](./CodeSnips/)
+## ✈️ [CodeSnips](./CodeSnips/) ✈️
 
-## ✈️ [Notes](./Notes/)
+## ✈️ [Notes](./Notes/) ✈️
