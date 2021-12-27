@@ -1,0 +1,10 @@
+{
+  "cmake.configureOnOpen": true
+}
+// {
+//   // 在资源管理器中隐藏那些文件
+//   "files.exclude": {
+//     "*.o": true,
+//     "bina": true
+//   }
+// }

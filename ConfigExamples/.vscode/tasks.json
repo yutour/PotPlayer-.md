@@ -1,0 +1,59 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "options": {
+    "cwd": "${workspaceFolder}/build"
+  },
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "cmake",
+      "command": "cmake",
+      "args": [".."]
+      //"args": [
+      //  // 引入工具链配置文件，相关内容从网上搜
+      //  "-DCMAKE_TOOLCHAIN_FILE=${workspaceFolder}/linux.toolchain.cmake",
+      //  // 启用调试(debug)
+      //  "-g",
+      //  // 启用所有诊断，不过可能会因为一些无伤大雅的问题而无法编译
+      //  // 比起 -Weverything 这是 Clang 编译器用户手册中推荐的方式
+      //  "-Wall",
+      //  "-Wextra",
+      //  // 多线程支持
+      //  "-pthread",
+      //  // 使用 LLVM lld 链接器而不是默认链接器
+      //  "-fuse-ld=lld",
+      //  // 启用 debug 信息优化
+      //  "-fstandalone-debug",
+      //  // 诊断信息着色
+      //  "-fcolor-diagnostics",
+      //  // 分析所有注释(这其实只需告诉 Clangd ，即添加到 compile_commands.json 中)
+      //  // Clang 默认只分析 Doxygen 风格("/**", "///"开头)的注释
+      //  "-fparse-all-comments",
+      //  // 设置 C++ 的标准库为 libc++: Clang 对应的标准库
+      //  "-stdlib=libc++",
+      //  // 设置 C++ 版本为 c++20
+      //  "-std=c++20",
+      //  // 为给定环境生成代码
+      //  "--target=x86_64-w64-mingw",
+      //  // CMakeLists.txt 所在目录
+      //  ".."
+      //]
+    },
+    {
+      "label": "make",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "command": "make",
+      "args": []
+    },
+    {
+      "label": "Build",
+      "dependsOrder": "sequence",
+      "dependsOn": ["cmake", "make"]
+    }
+  ]
+}

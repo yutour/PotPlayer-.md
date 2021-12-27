@@ -1,14 +1,18 @@
-/*
- * @Description: 只在 Linux 下测试了，未在 Windows 下测试。
- *               颜色代号和功能详表见维基百科 :
- *               https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
- *               方法一在不同的终端有时候会多一个换行，暂时还不知为什么。
- *               推荐方法二、三、四。
- * @Author: yyangdid
- * @Date: 2021-12-20 14:19:16
- * @LastEditors: yyangdid
- * @LastEditTime: 2021-12-20 14:22:05
+/**
+ * @brief 在 Linux 终端下输出带颜色的字符
+ * @file 500-输出带颜色的字符.c
+ * @version 0.0.1
+ * @date ⏲️ 2021-12-20 14:19:16
+ * @par Last modified time
+ * ⏲️ 2021-12-27 19:55:05
+ * @author yyangdid (yyangdid@gmail.com)
+ * @details 只在 Linux 下测试了，未在 Windows 下测试。
+ * 颜色代号和功能详表见维基百科 :
+ * https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+ * 方法一在不同的终端有时候会多一个换行，暂时还不知为什么。
+ * 推荐方法二、三、四。
  */
+
 #include <stdio.h>
 
 // ///////////////////////////////////////////////////////////////////////////

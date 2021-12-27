@@ -2,4 +2,6 @@
 
 ## ✈️ [CodeSnips](./CodeSnips/) ✈️
 
+## ✈️ [ConfigExamples](./ConfigExamples/) ✈️
+
 ## ✈️ [Notes](./Notes/) ✈️
