@@ -1,5 +1,5 @@
 # 本示例源码结构：
-# example_c
+# cmake_example
 # ├── build
 # ├── CMakeLists.txt
 # ├── main.c
