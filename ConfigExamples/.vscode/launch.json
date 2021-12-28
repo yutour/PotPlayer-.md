@@ -8,7 +8,9 @@
       "name": "(gdb) 启动",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/cmake_simple/bin/main",
+      // "program": "${workspaceFolder}/build/cmake_simple/bin/main",
+      // "program": "${workspaceRoot}/build/${fileBasenameNoExtension}",
+      "program": "${command:cmake.launchTargetPath}",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
@@ -22,6 +24,7 @@
           "ignoreFailures": true
         }
       ],
+      "internalConsoleOptions": "neverOpen",
       "preLaunchTask": "Build"
     }
     // {
