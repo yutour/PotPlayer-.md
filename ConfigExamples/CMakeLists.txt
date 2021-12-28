@@ -13,7 +13,7 @@
 #         └── good_luck.c
 
 # 指定 CMake 的最低版本
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
 # 指定项目的名称
 project(hello_world)
