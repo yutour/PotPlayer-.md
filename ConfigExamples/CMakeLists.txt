@@ -61,6 +61,6 @@ add_executable(${PROJECT_NAME} ${DIR_MAIN})
 target_link_libraries(${PROJECT_NAME} lib_d lib_s)
 # target_link_libraries(cmake_example lib_d lib_s)
 
-# 添加可执行文件所需要的库，比如我们用到了libm.so（命名规则：lib+name+.so）
+# 添加可执行文件所需要的库，比如我们用到了 libm.so（命名规则：lib+name+.so），即 math.h
 # target_link_libraries(${PROJECT_NAME} m)
 # target_link_libraries(cmake_example m)
