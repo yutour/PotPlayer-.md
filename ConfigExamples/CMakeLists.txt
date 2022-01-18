@@ -12,19 +12,22 @@
 #     └── lib_s
 #         └── good_luck.c
 
-# 指定 CMake 的最低版本 ---
+# 指定 CMake 的最低版本
 cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
-# 指定项目名称 ---
-project(cmake_example)
+# 指定项目名称
+project(cmake_example C)
 
-# 追加编译参数 ---
+# 设置 C 语言版本
+set(CMAKE_C_STANDARD 11)
+
+# 追加编译参数
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 
-# 设置构建版本 ---
+# 设置构建版本
 set(CMAKE_BUILD_TYPE Debug)
 
-# 设置导出 compile_commands.json 文件到 build 目录---
+# 设置导出 compile_commands.json 文件到 build 目录
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # 指定头文件目录
@@ -33,10 +36,10 @@ include_directories(./src/include)
 # 把项目根目录下的所有源码文件赋值给变量 DIR_MAIN
 aux_source_directory(. DIR_MAIN)
 
-# 把动态链接目录下的所有源码文件赋值给变量 DIR_DLIBS
+# 把动态链接目录下的所有源码文件赋值给变量 DIR_LIB_D
 aux_source_directory(./src/lib_d DIR_LIB_D)
 
-# 把静态链接目录下的所有源码文件赋值给变量 DIR_SLIBS
+# 把静态链接目录下的所有源码文件赋值给变量 DIR_LIB_S
 aux_source_directory(./src/lib_s DIR_LIB_S)
 
 # DIR_DLIBS 目录下源码文件生成动态链接库
